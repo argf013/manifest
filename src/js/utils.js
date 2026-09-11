@@ -1,8 +1,7 @@
 import { GRID_SIZE } from "./globals";
+import { confirm } from "./confirm";
 
-export function confirm(text) {
-  return window.confirm(text);
-};
+export { confirm };
 
 export function setLocalStorageItem(item, value) {
   return window.localStorage.setItem(`${item}`, JSON.stringify(value));
